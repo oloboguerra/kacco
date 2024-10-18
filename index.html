@@ -23,6 +23,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Fontdiner+Swanky&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="lightbox.css">
 
@@ -121,7 +126,23 @@
         }
 
         #link {
-            color: brown;
+            font-family: "Fontdiner Swanky", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: black;
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0fb335, 0 0 40px #0036e6, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #e4d8de;
+            }
         }
 
         img {
@@ -212,14 +233,16 @@
                 <div class="content">
                     <h2>São Paulo</h2>
                     <ul>
-                        <li class="items"><a id="link" href="https://www.instagram.com/ca.fundo/">@ca.fundo</a> // <a
-                                id="link" href="https://www.instagram.com/npcfest/">@npcfest</a>
+                        <li class="items"><strong><a target="_blank" id="link"
+                                    href="https://www.instagram.com/ca.fundo/">@ca.fundo</a>
+                                // <a target="_blank" id="link"
+                                    href="https://www.instagram.com/npcfest/">@npcfest</a></strong>
                             <p>
                                 <strong>01/11/24</strong> - NPC Fest #3 (Halloween) - <strong>Rua Teodoro
                                     Sampaio, 2785 (ao lado do metrô Faria Lima);</p></strong>
                         </li>
-                        <li class="items"><a id="link"
-                                href="https://www.instagram.com/poraodacervejasp/">@poraodacervejasp</a>
+                        <li class="items"><strong><a target="_blank" id="link"
+                                    href="https://www.instagram.com/poraodacervejasp/">@poraodacervejasp</a></strong>
                             <p>
                                 <strong>02/11/24</strong> - Porão da Cerveja (Finados Rock Fest) - <strong>Rua
                                     Lopes de Oliveira, 610 (metrô Marechal Deodoro)</p>
